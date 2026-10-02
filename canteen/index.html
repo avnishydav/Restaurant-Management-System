@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Daal Chini Sms</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+<h1 class="logo">DAL CHINI SMS</h1>
+
+<div>
+<select id="tableNo">
+<option value="">Table No</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+
+<input type="text" placeholder="Search..." onkeyup="searchFood(this.value)">
+
+<a href="cart.html" class="miniCart">
+🛒 <span id="count" class="badge">0</span>
+</a>
+</div>
+</header>
+
+<div class="menu" id="menu">
+
+</div>
+
+<script src="script.js"></script>
+<script>loadMenu()</script>
+
+</body>
+</html>

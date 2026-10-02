@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order Summary</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="summary-box">
+
+<h1 class="mainHeading">DAL CHINI SMS</h1>
+
+<table id="cartTable">
+<tr>
+<th>Item</th>
+<th>Qty</th>
+<th>Price</th>
+<th>Total</th>
+<th>X</th>
+</tr>
+</table>
+
+<h2 id="grandTotal">Total ₹0</h2>
+
+<button onclick="placeOrder()">Place Order</button>
+<button onclick="window.print()">Print Bill</button>
+<button onclick="clearCart()">Clear Cart</button>
+
+<br><br>
+<a href="index.html">⬅ Back</a>
+
+</div>
+
+<script src="script.js"></script>
+<script>loadCart()</script>
+
+</body>
+</html>

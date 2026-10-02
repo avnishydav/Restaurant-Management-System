@@ -1,0 +1,16 @@
+<h2>All Orders</h2>
+<div id="orders"></div>
+
+<script>
+fetch("http://127.0.0.1:5000/orders")
+.then(r=>r.json())
+.then(data=>{
+data.forEach(o=>{
+document.getElementById("orders").innerHTML +=
+"<pre>"+JSON.stringify(o,null,2)+"</pre><hr>";
+});
+});
+fetch("http://127.0.0.1:5000/orders")
+.then(res => res.json())
+.then(data => console.log(data));
+</script>
